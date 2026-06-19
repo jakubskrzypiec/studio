@@ -12,8 +12,8 @@
   --text: #2a211b;
   --muted: rgba(42, 33, 27, 0.68);
   --line: rgba(93, 67, 47, 0.16);
-  --brown: #8b735f;
-  --brown-dark: #30251d;
+  --brown: #b79b7f;
+  --brown-dark: #141414;
   --caramel: #b79b7f;
   --cream: #fff8ef;
   --shadow: 0 24px 70px rgba(67, 46, 31, 0.16);
@@ -28,7 +28,7 @@ body {
   font-family: "Inter", sans-serif;
   background:
     radial-gradient(circle at 10% 0%, rgba(183, 155, 127, 0.13), transparent 28%),
-    linear-gradient(180deg, #fbf6ef 0%, #f2e7dc 48%, #f8f1ea 100%);
+    linear-gradient(180deg, #fbf6ef 0%, #f4efe8 48%, #fbf6ef 100%);
   color: var(--text);
   overflow-x: hidden;
 }
@@ -67,7 +67,7 @@ a {
   overflow: hidden;
   background:
     radial-gradient(circle at 22% 20%, rgba(183, 155, 127, 0.18), transparent 30%),
-    linear-gradient(135deg, #fffaf4 0%, #f4e5d6 100%);
+    linear-gradient(135deg, #fffaf4 0%, #f4efe8 100%);
   opacity: 1;
   visibility: visible;
   transition:
@@ -86,7 +86,7 @@ a {
 }
 
 .splash-screen::before {
-  background: rgba(139, 115, 95, 0.12);
+  background: rgba(183, 155, 127, 0.12);
 }
 
 .splash-screen::after {
@@ -363,7 +363,7 @@ a {
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(255, 250, 244, 0.54), rgba(255, 250, 244, 0.18), rgba(255, 250, 244, 0.02)),
+    linear-gradient(90deg, rgba(255, 250, 244, 0.46), rgba(255, 250, 244, 0.14), rgba(255, 250, 244, 0.02)),
     linear-gradient(180deg, rgba(42, 33, 27, 0.04), rgba(42, 33, 27, 0.18));
 }
 
@@ -1103,7 +1103,7 @@ a {
   .nav a {
     padding: 9px 11px;
     border: 1px solid rgba(93, 67, 47, 0.12);
-    background: rgba(139, 115, 95, 0.07);
+    background: rgba(183, 155, 127, 0.07);
     font-size: 10px;
     letter-spacing: 0.11em;
   }
