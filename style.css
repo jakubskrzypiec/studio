@@ -1607,3 +1607,172 @@ a {
     margin-top: 0 !important;
   }
 }
+
+
+/* === V6 REAL MOBILE HEADER FIX === */
+/* Ten blok jest celowo na samym końcu i nadpisuje wcześniejsze mobile style. */
+
+@media (max-width: 920px) {
+  .site-header {
+    position: fixed !important;
+    top: max(8px, env(safe-area-inset-top)) !important;
+    left: 10px !important;
+    right: 10px !important;
+    width: auto !important;
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    padding: 8px 9px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 7px !important;
+    transform: none !important;
+    border-radius: 16px !important;
+    background: rgba(255, 250, 244, 0.92) !important;
+    border: 1px solid rgba(42, 33, 27, 0.10) !important;
+    box-shadow: 0 10px 34px rgba(42, 33, 27, 0.10) !important;
+    backdrop-filter: blur(16px) !important;
+  }
+
+  .site-header.is-hidden {
+    transform: translateY(calc(-100% - 18px)) !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .brand {
+    width: 100% !important;
+    height: 28px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 auto !important;
+  }
+
+  .brand-mark {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 28px !important;
+  }
+
+  .brand img {
+    width: auto !important;
+    height: 28px !important;
+    max-width: 86px !important;
+    object-fit: contain !important;
+  }
+
+  .nav {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 6px !important;
+    padding: 0 1px 2px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    flex: 0 0 auto !important;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .nav a {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: auto !important;
+    max-width: none !important;
+    min-height: 28px !important;
+    height: 28px !important;
+    padding: 0 10px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 999px !important;
+    border: 1px solid rgba(42, 33, 27, 0.10) !important;
+    background: rgba(42, 33, 27, 0.035) !important;
+    color: rgba(42, 33, 27, 0.74) !important;
+    font-size: 9px !important;
+    line-height: 1 !important;
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+    font-weight: 900 !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+
+  .nav a::after {
+    display: none !important;
+  }
+
+  .hero {
+    padding-top: 116px !important;
+  }
+
+  .subhero {
+    padding-top: 116px !important;
+  }
+
+  .hero-content {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    top: max(7px, env(safe-area-inset-top)) !important;
+    left: 8px !important;
+    right: 8px !important;
+    padding: 7px 8px !important;
+    gap: 6px !important;
+    border-radius: 14px !important;
+  }
+
+  .brand,
+  .brand-mark {
+    height: 24px !important;
+  }
+
+  .brand img {
+    height: 24px !important;
+    max-width: 78px !important;
+  }
+
+  .nav {
+    gap: 5px !important;
+    padding-bottom: 1px !important;
+  }
+
+  .nav a {
+    height: 26px !important;
+    min-height: 26px !important;
+    padding: 0 9px !important;
+    font-size: 8.4px !important;
+    letter-spacing: 0.065em !important;
+  }
+
+  .hero {
+    padding-top: 104px !important;
+  }
+
+  .subhero {
+    padding-top: 104px !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .nav a {
+    padding: 0 8px !important;
+    font-size: 8px !important;
+  }
+}
