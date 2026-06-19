@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+
   const splash = document.querySelector(".splash-screen");
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!location.hash) {
+    window.scrollTo(0, 0);
+  }
 
   if (splash) {
     if (prefersReducedMotion) {
@@ -21,6 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
       window.setTimeout(() => {
         document.body.classList.remove("is-splashing");
         splash.remove();
+
+        if (location.hash) {
+          const target = document.querySelector(location.hash);
+          if (target) target.scrollIntoView({ behavior: "auto", block: "start" });
+        } else {
+          window.scrollTo(0, 0);
+        }
       }, 3350);
     }
   }
@@ -47,9 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const updateHeader = () => {
       const currentScrollY = window.scrollY;
       const scrollingDown = currentScrollY > lastScrollY;
-      const farEnough = currentScrollY > 110;
+      const farEnough = currentScrollY > 140;
 
-      if (currentScrollY <= 20) {
+      if (currentScrollY <= 30) {
         header.classList.remove("is-hidden");
       } else if (scrollingDown && farEnough) {
         header.classList.add("is-hidden");
@@ -69,26 +84,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { passive: true });
   }
 
-  document.querySelectorAll('a[href*="#"]').forEach((link) => {
+  // Smooth scroll tylko dla linków z tej samej podstrony.
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener("click", (event) => {
-      const href = link.getAttribute("href");
-      const hashIndex = href.indexOf("#");
-      const samePage = href.startsWith("#") || href.startsWith(window.location.pathname.split("/").pop() + "#");
-
-      if (hashIndex === -1 || !samePage) return;
-
-      const selector = href.slice(hashIndex);
+      const selector = link.getAttribute("href");
       const target = document.querySelector(selector);
 
       if (!target) return;
 
       event.preventDefault();
+      if (header) header.classList.remove("is-hidden");
       target.scrollIntoView({ behavior: "smooth", block: "start" });
-
-      if (header) {
-        header.classList.add("is-hidden");
-        window.setTimeout(() => header.classList.remove("is-hidden"), 500);
-      }
     });
   });
 
@@ -135,9 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lightboxClose.addEventListener("click", closeLightbox);
 
     lightbox.addEventListener("click", (event) => {
-      if (event.target === lightbox) {
-        closeLightbox();
-      }
+      if (event.target === lightbox) closeLightbox();
     });
 
     document.addEventListener("keydown", (event) => {
@@ -145,5 +149,11 @@ document.addEventListener("DOMContentLoaded", () => {
         closeLightbox();
       }
     });
+  }
+});
+
+window.addEventListener("pageshow", () => {
+  if (!location.hash) {
+    window.scrollTo(0, 0);
   }
 });
