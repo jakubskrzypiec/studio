@@ -9,266 +9,292 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-<header class="site-header" id="top">
-  <a href="#start" class="brand" aria-label="archstudiokm">
-    <img src="logo male.png" alt="archstudiokm">
-  </a>
-
-  <nav class="nav" aria-label="Menu główne">
-    <a href="#studio">Studio</a>
-    <a href="#oferta">Oferta</a>
-    <a href="#realizacje">Realizacje</a>
-    <a href="#proces">Proces</a>
-    <a href="#kontakt">Kontakt</a>
-  </nav>
-
-  <a href="#kontakt" class="nav-btn">Porozmawiajmy</a>
-</header>
-
-<main>
-
-  <section class="hero" id="start">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-
-    <div class="hero-card reveal">
-      <p class="eyebrow">Studio projektowania wnętrz</p>
-
-      <h1>Tworzymy<br>wnętrza z klasą<br>i spokojem.</h1>
-
-      <div class="hero-line"></div>
-
-      <p class="hero-text">
-        Projektujemy wnętrza, które łączą estetykę, funkcjonalność i ponadczasowy charakter.
-        Każdy projekt powstaje z dbałością o detal, proporcje, światło i potrzeby klienta.
-      </p>
-
-      <div class="hero-actions">
-        <a href="#realizacje" class="btn btn-dark">Zobacz realizacje</a>
-        <a href="#kontakt" class="btn btn-light">Kontakt</a>
-      </div>
+  <div class="splash-screen" aria-hidden="true">
+    <div class="splash-card">
+      <span class="splash-logo"><img src="logo.png" alt=""></span>
+      <span class="splash-line"></span>
+      <span class="splash-name">archstudiokm</span>
+      <span class="splash-subtitle">studio projektowania wnętrz</span>
     </div>
-  </section>
+  </div>
 
-  <section class="intro section" id="studio">
-    <div class="section-kicker reveal">O studio</div>
+  <header class="site-header">
+    <a href="index.html#start" class="brand" aria-label="archstudiokm">
+      <span class="brand-mark"><img src="logo male.png" alt="archstudiokm"></span>
+    </a>
 
-    <div class="intro-grid">
-      <div class="intro-title reveal">
-        <h2>Eleganckie wnętrza dopracowane w detalu.</h2>
+    <nav class="nav" aria-label="Menu główne">
+      <a href="index.html#studio">Studio</a>
+      <a href="oferta.html">Oferta</a>
+      <a href="index.html#realizacje">Realizacje</a>
+      <a href="index.html#proces">Proces</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">archstudiokm</p>
+        <h1>Wnętrza zaprojektowane ze spokojem.</h1>
+        <p>
+          Studio projektowania wnętrz Katarzyny Michoń-Kotas. Tworzymy funkcjonalne,
+          eleganckie i dopracowane przestrzenie — od koncepcji po szczegółowy projekt.
+        </p>
+
+        <div class="hero-actions">
+          <a href="oferta.html" class="btn btn-primary">Zobacz ofertę</a>
+          <a href="#kontakt" class="btn btn-ghost">Porozmawiajmy</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro" id="studio">
+      <div class="intro-media reveal">
+        <img src="pokoj glowny.png" alt="Elegancki projekt wnętrza" loading="lazy">
       </div>
 
       <div class="intro-text reveal">
+        <p class="eyebrow">O studio</p>
+        <h2>Projektujemy wnętrza, które są piękne, wygodne i przemyślane.</h2>
         <p>
-          archstudiokm to studio projektowania wnętrz prowadzone przez Katarzynę Michoń-Kotas.
-          Tworzymy projekty mieszkań, domów i przestrzeni komercyjnych — online oraz stacjonarnie.
+          archstudiokm prowadzi projekty mieszkań, domów, kuchni, salonów, pokoi dziecięcych
+          oraz przestrzeni komercyjnych. Każdy projekt zaczyna się od rozmowy i poznania potrzeb.
+        </p>
+        <p>
+          W pracy łączymy jasne przestrzenie, naturalne materiały, funkcjonalne układy i eleganckie detale.
+          Dzięki temu wnętrze jest spójne, ale nadal dopasowane do codziennego życia.
+        </p>
+      </div>
+    </section>
+
+    <section class="section offer-section" id="oferta">
+      <div class="section-head reveal">
+        <p class="eyebrow">Oferta</p>
+        <h2>Czytelne pakiety bez ukrywania zakresu.</h2>
+        <p>
+          Zakres współpracy dobieramy do potrzeb: od konsultacji i koncepcji po kompleksowy projekt.
+          Ceny ustalane są indywidualnie po poznaniu metrażu i zakresu prac.
+        </p>
+      </div>
+
+      <div class="offer-grid">
+        <article class="offer-card reveal">
+          <span>01</span>
+          <h3>Konsultacja projektowa</h3>
+          <p>Pomoc w decyzjach dotyczących układu, kolorów, materiałów, oświetlenia i kierunku wnętrza.</p>
+        </article>
+
+        <article class="offer-card reveal">
+          <span>02</span>
+          <h3>Projekt koncepcyjny</h3>
+          <p>Układ funkcjonalny, klimat, inspiracje, kolorystyka i pierwszy kierunek wizualny projektu.</p>
+        </article>
+
+        <article class="offer-card reveal">
+          <span>03</span>
+          <h3>Projekt kompleksowy</h3>
+          <p>Pełne opracowanie wnętrza z wizualizacjami, materiałami, rysunkami i listą elementów.</p>
+        </article>
+
+        <article class="offer-card reveal">
+          <span>04</span>
+          <h3>Projekty komercyjne</h3>
+          <p>Biura, sale zabaw, lokale usługowe oraz przestrzenie wymagające funkcji i dobrego pierwszego wrażenia.</p>
+        </article>
+      </div>
+
+      <div class="section-cta reveal">
+        <a href="oferta.html" class="btn btn-primary">Pełna oferta</a>
+      </div>
+    </section>
+
+    <section class="section projects" id="realizacje">
+      <div class="section-head reveal">
+        <p class="eyebrow">Realizacje</p>
+        <h2>Wybrane projekty</h2>
+        <p>
+          W galerii znajdziesz przykłady kuchni, salonów, pokoi dziecięcych, stref relaksu
+          oraz wnętrz utrzymanych w spokojnej, eleganckiej estetyce.
+        </p>
+      </div>
+
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">Wszystkie</button>
+        <button class="filter-btn" data-filter="kuchnie">Kuchnie</button>
+        <button class="filter-btn" data-filter="salony">Salony</button>
+        <button class="filter-btn" data-filter="dzieciece">Dziecięce</button>
+        <button class="filter-btn" data-filter="pozostale">Pozostałe</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal" data-category="kuchnie">
+          <img src="kuchnia inna.png" alt="Projekt kuchni" loading="lazy">
+          <div>
+            <span>Kuchnia</span>
+            <h3>Ciemna elegancja i kamienne detale</h3>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="dzieciece">
+          <img src="dziecko 1.png" alt="Pokój dziecięcy" loading="lazy">
+          <div>
+            <span>Pokój dziecięcy</span>
+            <h3>Przytulna przestrzeń dla dziecka</h3>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="salony">
+          <img src="salon 2.png" alt="Salon" loading="lazy">
+          <div>
+            <span>Salon</span>
+            <h3>Jasna strefa dzienna</h3>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="pozostale">
+          <img src="mini kino.png" alt="Mini kino" loading="lazy">
+          <div>
+            <span>Strefa relaksu</span>
+            <h3>Domowe mini kino</h3>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="kuchnie">
+          <img src="kuchnia inna 2.png" alt="Kuchnia z jadalnią" loading="lazy">
+          <div>
+            <span>Kuchnia</span>
+            <h3>Funkcja, światło i kontrast</h3>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="salony">
+          <img src="sofa.png" alt="Projekt salonu" loading="lazy">
+          <div>
+            <span>Salon</span>
+            <h3>Miękka i spokojna kompozycja</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="split-section" id="proces">
+      <div class="split-image reveal">
+        <img src="kuchnia inna 3.png" alt="Projekt wnętrza" loading="lazy">
+      </div>
+
+      <div class="split-content reveal">
+        <p class="eyebrow">Proces</p>
+        <h2>Od pierwszej rozmowy do gotowej koncepcji.</h2>
+
+        <div class="process-list">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>Poznanie potrzeb</h3>
+              <p>Rozmawiamy o stylu życia, funkcjach, budżecie i oczekiwanym klimacie wnętrza.</p>
+            </div>
+          </article>
+
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Koncepcja i układ</h3>
+              <p>Tworzymy układ funkcjonalny, kierunek stylistyczny, inspiracje i bazę projektu.</p>
+            </div>
+          </article>
+
+          <article>
+            <span>03</span>
+            <div>
+              <h3>Projekt i wizualizacje</h3>
+              <p>Dopracowujemy materiały, kolorystykę, zabudowy, oświetlenie i finalny efekt.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="kontakt">
+      <div class="contact-bg"></div>
+
+      <div class="contact-panel reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Porozmawiajmy o Twoim wnętrzu.</h2>
+        <p>
+          Napisz, czego dotyczy projekt, jaki zakres Cię interesuje i na jakim etapie jesteś.
+          Oferta zostanie dobrana indywidualnie.
         </p>
 
-        <p>
-          W projektach stawiamy na harmonię, funkcjonalność i jakość. Łączymy jasne przestrzenie,
-          naturalne materiały, ciemne akcenty i subtelne złote detale.
-        </p>
+        <div class="contact-grid">
+          <a href="tel:+48601459198">
+            <span>Telefon</span>
+            <strong>+48 601 459 198</strong>
+          </a>
+
+          <a href="mailto:archstudiokm@gmail.com">
+            <span>E-mail</span>
+            <strong>archstudiokm@gmail.com</strong>
+          </a>
+
+          <a href="https://www.instagram.com/archstudiokm/" target="_blank" rel="noopener">
+            <span>Instagram</span>
+            <strong>archstudiokm</strong>
+          </a>
+
+          <a href="#" target="_blank" rel="noopener">
+            <span>Facebook</span>
+            <strong>do podpięcia</strong>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <section class="image-band reveal">
-    <img src="pokoj glowny.png" alt="Elegancki salon">
-    <img src="kuchnia.png" alt="Projekt kuchni">
-    <img src="sypialnia.png" alt="Projekt sypialni">
-  </section>
-
-  <section class="section offer-section" id="oferta">
-    <div class="section-head reveal">
-      <p class="eyebrow">Oferta</p>
-      <h2>Projektowanie wnętrz od koncepcji do efektu.</h2>
-      <p>
-        Zakres współpracy dopasowujemy do inwestycji — od układu funkcjonalnego,
-        przez wizualizacje, po dobór materiałów, kolorów i wyposażenia.
-      </p>
-    </div>
-
-    <div class="offer-grid">
-      <article class="offer-card reveal">
-        <span>01</span>
-        <h3>Projekty mieszkań i domów</h3>
-        <p>Kompleksowe projekty wnętrz prywatnych, dopasowane do stylu życia i potrzeb domowników.</p>
-      </article>
-
-      <article class="offer-card reveal">
-        <span>02</span>
-        <h3>Kuchnie i strefy dzienne</h3>
-        <p>Przemyślane układy, ergonomia, dobór materiałów i spójna estetyka najważniejszych przestrzeni.</p>
-      </article>
-
-      <article class="offer-card reveal">
-        <span>03</span>
-        <h3>Pokoje dziecięce</h3>
-        <p>Wnętrza funkcjonalne, przytulne i dopasowane do wieku dziecka oraz rytmu codzienności.</p>
-      </article>
-
-      <article class="offer-card reveal">
-        <span>04</span>
-        <h3>Wizualizacje i konsultacje</h3>
-        <p>Pomoc przy decyzjach projektowych, stylistycznych i materiałowych — online lub stacjonarnie.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section realizacje" id="realizacje">
-    <div class="section-head reveal">
-      <p class="eyebrow">Realizacje</p>
-      <h2>Wybrane projekty wnętrz</h2>
-      <p>Jasne, eleganckie przestrzenie, miękkie tkaniny, drewno, marmur, czerń i subtelne złoto.</p>
-    </div>
-
-    <div class="projects-grid">
-      <article class="project-card big reveal">
-        <img src="kuchnia inna.png" alt="Nowoczesna kuchnia">
-        <div>
-          <span>Kuchnia</span>
-          <h3>Ciemna elegancja i kamienne detale</h3>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <img src="dziecko 1.png" alt="Pokój dziecięcy">
-        <div>
-          <span>Pokój dziecięcy</span>
-          <h3>Delikatna przestrzeń dla dziecka</h3>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <img src="salon 2.png" alt="Salon">
-        <div>
-          <span>Salon</span>
-          <h3>Jasna strefa dzienna</h3>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <img src="mini kino.png" alt="Mini kino">
-        <div>
-          <span>Strefa relaksu</span>
-          <h3>Domowe mini kino</h3>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <img src="kuchnia inna 2.png" alt="Kuchnia z jadalnią">
-        <div>
-          <span>Kuchnia</span>
-          <h3>Funkcja, światło i kontrast</h3>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="process section" id="proces">
-    <div class="section-head reveal">
-      <p class="eyebrow">Proces</p>
-      <h2>Jak wygląda współpraca?</h2>
-      <p>Pracujemy etapowo, jasno i spokojnie — od rozmowy po gotową koncepcję wnętrza.</p>
-    </div>
-
-    <div class="process-grid">
-      <article class="process-step reveal">
-        <span>01</span>
-        <h3>Rozmowa i potrzeby</h3>
-        <p>Ustalamy styl, funkcję, budżet, zakres projektu i najważniejsze założenia.</p>
-      </article>
-
-      <article class="process-step reveal">
-        <span>02</span>
-        <h3>Koncepcja i układ</h3>
-        <p>Tworzymy układ funkcjonalny, kierunek stylistyczny i pierwsze decyzje projektowe.</p>
-      </article>
-
-      <article class="process-step reveal">
-        <span>03</span>
-        <h3>Projekt i wizualizacje</h3>
-        <p>Dopracowujemy wnętrze, materiały, kolorystykę, oświetlenie i finalne wizualizacje.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="contact" id="kontakt">
-    <div class="contact-bg">
-      <img src="kuchnia inna 3.png" alt="Elegancka kuchnia">
-    </div>
-
-    <div class="contact-panel reveal">
-      <p class="eyebrow">Kontakt</p>
-      <h2>Porozmawiajmy o Twoim wnętrzu.</h2>
-      <p>
-        Napisz, czego dotyczy projekt: mieszkanie, dom, pokój dziecięcy, kuchnia,
-        salon albo przestrzeń komercyjna.
-      </p>
-
-      <div class="contact-list">
-        <a href="mailto:archstudiokm@gmail.com">archstudiokm@gmail.com</a>
-        <a href="tel:+48601459198">+48 601 459 198</a>
-        <a href="https://www.instagram.com/archstudiokm/" target="_blank" rel="noopener">Instagram</a>
-      </div>
-
-      <div class="contact-actions">
-        <a href="mailto:archstudiokm@gmail.com" class="btn btn-dark">Napisz e-mail</a>
-        <a href="https://www.instagram.com/archstudiokm/" target="_blank" rel="noopener" class="btn btn-light">Instagram</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="footer-main">
+  <footer class="footer">
     <div class="footer-brand">
       <img src="logo.png" alt="archstudiokm">
-      <h3>archstudiokm</h3>
       <p>
-        Studio projektowania wnętrz Katarzyny Michoń-Kotas.
-        Projekty online i stacjonarne.
+        archstudiokm — studio projektowania wnętrz Katarzyny Michoń-Kotas.
+        Projekty mieszkań, domów, elewacji i przestrzeni komercyjnych.
       </p>
+      <p class="footer-small">Projektowanie wnętrz, koncepcje, wizualizacje i konsultacje.</p>
     </div>
 
-    <div class="footer-col">
-      <h4>Menu</h4>
-      <a href="#studio">Studio</a>
-      <a href="#oferta">Oferta</a>
-      <a href="#realizacje">Realizacje</a>
-      <a href="#proces">Proces</a>
-    </div>
-
-    <div class="footer-col">
+    <div class="footer-links">
       <h4>Oferta</h4>
-      <p>Projekty wnętrz</p>
-      <p>Kuchnie i salony</p>
-      <p>Pokoje dziecięce</p>
-      <p>Wizualizacje</p>
+      <a href="oferta.html">Konsultacja projektowa</a>
+      <a href="oferta.html">Projekt koncepcyjny</a>
+      <a href="oferta.html">Projekt kompleksowy</a>
+      <a href="oferta.html">Przestrzenie komercyjne</a>
     </div>
 
-    <div class="footer-col">
+    <div class="footer-contact">
       <h4>Kontakt</h4>
-      <a href="mailto:archstudiokm@gmail.com">archstudiokm@gmail.com</a>
       <a href="tel:+48601459198">+48 601 459 198</a>
-      <a href="https://www.instagram.com/archstudiokm/" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:archstudiokm@gmail.com">archstudiokm@gmail.com</a>
+      <a href="https://www.instagram.com/archstudiokm/" target="_blank" rel="noopener">Instagram archstudiokm</a>
     </div>
+
+    <div class="footer-bottom">
+      <p>© archstudiokm. Studio projektowania wnętrz.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button id="lightboxClose" aria-label="Zamknij">×</button>
+    <img src="" alt="" id="lightboxImage">
   </div>
 
-  <div class="footer-bottom">
-    <p>© 2026 archstudiokm</p>
-    <p>Studio projektowania wnętrz • projekty online • projekty stacjonarne</p>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
